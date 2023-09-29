@@ -1,0 +1,23 @@
+[package]
+name = "gmtc"
+description = "Text viewer that can handle super long lines"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+encoding_rs = "*"
+scopeguard = "*"
+dirs = "*"
+env_logger = "*"
+log = "*"
+chrono = "*"
+sha2 = "*"
+rusqlite = { version = "*", features = ["bundled"] }
+crabrs = { path = "../crabrs" }
+crabsqliters = { path = "../crabsqliters" }
+
+[profile.release]
+debug = 1
+
