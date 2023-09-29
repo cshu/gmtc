@@ -15,8 +15,8 @@ log = "*"
 chrono = "*"
 sha2 = "*"
 rusqlite = { version = "*", features = ["bundled"] }
-crabrs = { path = "../crabrs" }
-crabsqliters = { path = "../crabsqliters" }
+crabrs = { git = "https://github.com/cshu/crabrs.git" }
+crabsqliters = { git = "https://github.com/cshu/crabsqliters.git" }
 
 [profile.release]
 debug = 1
